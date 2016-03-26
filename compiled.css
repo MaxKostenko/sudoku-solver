@@ -1,0 +1,108 @@
+.field,
+.cell {
+  border: 1px solid black;
+  z-index: 0;
+}
+
+.field {
+  width: 267px;
+  height: 267px;
+}
+
+.cell {
+  font-size: 0;
+  width: 27px;
+  hieght: 27px;
+  border: 1px solid grey;
+  display: inline-block;
+  position: relative;
+}
+
+.triada {
+  font-size: 0;
+  width: 87px;
+  height: 87px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.cell-possible-val {
+  display: inline-block;
+  font-size: 8px;
+  color: blue;
+  width: 9px;
+  height: 9px;
+  text-align: center;
+}
+
+.cell-possible {
+  width: 100%;
+  hieght: 100%;
+  display: inline-block;
+  font-size: 0;
+}
+
+.cell-val {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  font-size: 18px;
+  text-align: center;
+  width: 27px;
+  height: 27px;
+}
+
+.popup {
+  position: absolute;
+  width: 100px;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 10;
+  padding: 2px;
+  left: 90px;
+  top: 65px;
+  display: none;
+}
+
+.popup.active {
+  display: block;
+}
+
+.numbers > div {
+  padding: 0;
+  margin: 0 0 1px 1px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  float: left;
+  text-align: center;
+  border: 1px solid grey;
+  cursor: pointer;
+  line-height: 2;
+}
+
+.numbers {
+  clear: both;
+}
+
+.numbers > div:hover, .clear:hover {
+  background-color: #EEE;
+}
+
+.close {
+  text-align: right;
+  cursor: pointer;
+  width: 10px;
+  height: 15px;
+  line-height: 0.5;
+  float: right;
+}
+
+.clear {
+  clear: both;
+  width: 96px;
+  border: 1px solid grey;
+  margin: 1px;
+  text-align: center;
+  cursor: pointer;
+}
